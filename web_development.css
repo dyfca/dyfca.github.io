@@ -1,0 +1,22 @@
+.text-wrap {
+  white-space: normal;
+}
+
+.center-block {
+	float: left;
+}
+
+img {
+	width: 140px;
+	height: 140px;
+}
+
+.container{
+	position: relative;
+	bottom: -90px;
+}
+
+.material-icons{
+	position: relative;
+	bottom: -40px;
+}
