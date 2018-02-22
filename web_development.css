@@ -4,6 +4,8 @@
 
 .center-block {
 	float: left;
+	position: relative;
+	margin-top: 10px;
 }
 
 img {
@@ -19,4 +21,25 @@ img {
 .material-icons{
 	position: relative;
 	bottom: -40px;
+}
+
+.card-text {
+	width: 150px;
+	height: 150px;
+	vertical-align: middle;
+	text-align: center;
+}
+.card-text div {
+	position: relative;
+	margin-top: 55px;
+	font-size: 25px;	
+}
+
+.btn {
+	height: 50px;
+	text-align: center;
+	vertical-align: middle;
+	border-width: 1px;
+	border-style: solid;
+	font-size: 20px;
 }
