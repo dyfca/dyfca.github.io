@@ -20,10 +20,6 @@
 			  		<a class="nav-link" href="./main_page.html">Home <span class="sr-only">(current)</span></a>
 			  	</li>
 			  	</ul>
-				<form class="form-inline mt-2 mt-md-0">
-				  	<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-				  	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-				</form>
 			</div>
 		</nav>
 	</header>
@@ -49,7 +45,7 @@
       	</div>
       </div>
       <div class="col-md-9">
-        <div class="col-md-11 order-md-1">
+        <div id="personal-information" class="col-md-11 order-md-1">
         	<h4 class="mb-3">Personal Profile</h4>
             <form class="needs-validation" novalidate>
             <div class="row">
@@ -105,9 +101,25 @@
             </div>
             </form>
         </div>
+        <div id="personal-history" class="col-md-11 order-md-1" style="display: none">
+          <h4 class="mb-3">Personal Profile</h4>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Type</th>
+                  <th scope="col">Course</th>
+                  <th scope="col">Name</th>
+                </tr>
+              </thead>
+              <tbody id="pivot">
+              </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
+
+  
 
 </body>
 
