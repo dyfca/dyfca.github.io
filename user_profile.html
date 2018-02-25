@@ -45,7 +45,7 @@
       	</div>
       </div>
       <div class="col-md-9">
-        <div class="col-md-11 order-md-1">
+        <div id="personal-information" class="col-md-11 order-md-1">
         	<h4 class="mb-3">Personal Profile</h4>
             <form class="needs-validation" novalidate>
             <div class="row">
@@ -101,9 +101,25 @@
             </div>
             </form>
         </div>
+        <div id="personal-history" class="col-md-11 order-md-1" style="display: none">
+          <h4 class="mb-3">Personal Profile</h4>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Type</th>
+                  <th scope="col">Course</th>
+                  <th scope="col">Name</th>
+                </tr>
+              </thead>
+              <tbody id="pivot">
+              </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
+
+  
 
 </body>
 
