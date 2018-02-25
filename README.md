@@ -1,2 +1,1 @@
-# dyfca.github.io
-EECS 330 HCI Project
+#330 HCI
