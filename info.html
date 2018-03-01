@@ -22,7 +22,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="./main_page.html">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="./sign_up.html">Register<span class="sr-only">(current)</span></a>
@@ -67,10 +67,10 @@
           <div class="col-md-7">
             <div class="info-button">
               <div class="row">
-                <div class="col-md-12"><button class="btn btn-primary" type="button" onClick="increaseProgressBar()">Start Learning</button></div>
+                <div class="col-md-12"><button class="btn btn-primary" type="button" onclick="location.href='https://www.w3schools.com/html/default.asp'; return false;">Start Learning</button></div>
               </div>
               <div class="row">
-                <div class="col-md-12"><button class="btn btn-primary" type="button">Quiz</button></div>
+                <div class="col-md-12"><button class="btn btn-primary" type="button" data-toggle="modal" data-target="#quizForm">Quiz</button></div>
               </div>
             </div>
           </div>
@@ -79,12 +79,101 @@
       </div>
     </div>
 
-
-
+    <div id="quizForm" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="text-center">
+              <h2 class="modal-title">HTML QUIZ</h2>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div>
+              <p style="margin-top: 20px;">1. What does HTML stand for?</p>
+              <div class="radio">
+              <label>
+                <input type="radio"  class="correct" name="question1">
+                Hyperlinks and Text Markup Language
+              </label>
+              <label>
+                <input type="radio" name="question1">
+                Hyper Text Markup Language
+              </label>
+              <label>
+                <input type="radio" name="question1">
+                Home Tool Markup Language
+              </label>
+              </div>
+              <p style="margin-top: 20px;">2. Who is making the Web standards?</p>
+              <div class="radio">
+              <label>
+                <input type="radio" class="correct" name="question2">
+                The World Wide Web Consortium&nbsp;&nbsp;
+              </label>
+              <label>
+                <input type="radio" name="question2">
+                Mozilla&nbsp;&nbsp;&nbsp;&nbsp;
+              </label>
+              <label>
+                <input type="radio" name="question2">
+                Microsoft&nbsp;&nbsp;&nbsp;&nbsp;
+              </label>
+              <label>
+                <input type="radio" name="question2">
+                Google
+              </label>
+              </div>
+              <p style="margin-top: 20px;">3. Which character is used to indicate an end tag?</p>
+              <div class="radio">
+              <label>
+                <input type="radio" class="correct" name="question3">
+                /&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </label>
+              <label>
+                <input type="radio" name="question3">
+                *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </label>
+              <label>
+                <input type="radio" name="question3">
+                <&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </label>
+              <label>
+                <input type="radio" name="question3">
+                ^
+              </label>
+              </div>
+              <p style="margin-top:20px;">4. Inline elements are normally displayed without starting a new line.</p>
+              <div class="radio">
+              <label>
+                <input type="radio" class="correct" name="question4">
+                True&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </label>
+              <label>
+                <input type="radio" name="question4">
+                False
+              </label>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-md-6">
+                <button class="btn btn-primary btn-lg btn-block" type="submit" onclick="submitQuiz()">Submit</button>
+              </div>
+              <div class="col-md-6">
+                <button class="btn btn-lg btn-block" data-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
        <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./info.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
   </body>
