@@ -37,8 +37,8 @@
         <div class="center-block">
          <div class="card text-white bg-secondary md-6" id="process-1" style="max-width: 20rem">
               <span class="card-text"><div>XML</div></span>
-              <span class="btn btn-danger disabled">Study</span>
-              <span class="btn btn-danger disabled">Finish</span>
+              <span class="btn btn-primary disabled">Study</span>
+              <span class="btn btn-primary disabled">Finish</span>
           </div>
         </div>
         <div class="btn center-block">
@@ -47,8 +47,8 @@
         <div class="center-block">
           <div class="card text-white bg-secondary md-6" id="process-2" style="max-width: 20rem">
               <span class="card-text"><div>HTML</div></span>
-              <span class="btn btn-danger disabled">Study</span>
-              <a class="btn btn-danger disabled" href="./html_quiz.html"><span>Finish</span></a>
+              <span class="btn btn-primary disabled">Study</span>
+              <span class="btn btn-primary disabled" data-toggle="modal" data-target="#quizForm"><span>Finish</span></span>
           </div>
         </div>
         <p class="btn center-block">
@@ -57,8 +57,8 @@
         <div class="center-block">
           <div class="card text-white bg-secondary md-6" id="process-3" style="max-width: 20rem">
               <span class="card-text"><div>CSS</div></span>
-              <span class="btn btn-danger disabled">Study</span>
-              <span class="btn btn-danger disabled">Finish</span>
+              <span class="btn btn-primary disabled">Study</span>
+              <span class="btn btn-primary disabled">Finish</span>
           </div>
         </div>
         <p class="btn center-block">
@@ -67,8 +67,8 @@
         <div class="center-block">
           <div class="card text-white bg-secondary md-6" id="process-4" style="max-width: 20rem">
               <span class="card-text"><div>JavaScript</div></span>
-              <span class="btn btn-danger disabled">Study</span>
-              <span class="btn btn-danger disabled">Finish</span>
+              <span class="btn btn-primary disabled">Study</span>
+              <span class="btn btn-primary disabled">Finish</span>
           </div>
         </div>
         <p class="btn center-block">
@@ -77,8 +77,8 @@
         <div class="center-block">
           <div class="card text-white bg-secondary md-6" id="process-5" style="max-width: 20rem">
               <span class="card-text"><div>JQuery</div></span>
-              <span class="btn btn-danger disabled">Study</span> 
-              <span class="btn btn-danger disabled">Finish</span>
+              <span class="btn btn-primary disabled">Study</span> 
+              <span class="btn btn-primary disabled">Finish</span>
           </div>
         </div>
         <p class="btn center-block">
@@ -87,8 +87,8 @@
         <div class="center-block">
           <div class="card text-white bg-secondary md-6" id="process-6" style="max-width: 20rem">
               <span class="card-text"><div>Angular</div></span>
-              <span class="btn btn-danger disabled"sp'">Study</span>
-              <span class="btn btn-danger disabled">Finish</span>
+              <span class="btn btn-primary disabled"sp'">Study</span>
+              <span class="btn btn-primary disabled">Finish</span>
           </div>
         </div>
         <p class="btn center-block">
@@ -97,13 +97,110 @@
         <div class="center-block">
           <div class="card text-white bg-secondary md-6" id="process-7" style="max-width: 20rem">
               <span class="card-text"><div>Bootstrap</div></span>
-              <span class="btn btn-danger disabled">Study</span>
-              <span class="btn btn-danger disabled">Finish</span>
+              <span class="btn btn-primary disabled">Study</span>
+              <span class="btn btn-primary disabled">Finish</span>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+
+   <div id="quizForm" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="text-center">
+              <h2 class="modal-title">HTML QUIZ</h2>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div>
+              <p style="margin-top: 20px;">1. What does HTML stand for?</p>
+              <div class="radio">
+              <label>
+                <input type="radio"  class="correct" name="question1">
+                Hyperlinks and Text Markup Language
+              </label>
+              <label>
+                <input type="radio" name="question1">
+                Hyper Text Markup Language
+              </label>
+              <label>
+                <input type="radio" name="question1">
+                Home Tool Markup Language
+              </label>
+              </div>
+              <p style="margin-top: 20px;">2. Who is making the Web standards?</p>
+              <div class="radio">
+              <label>
+                <input type="radio" class="correct" name="question2">
+                The World Wide Web Consortium&nbsp;&nbsp;
+              </label>
+              <label>
+                <input type="radio" name="question2">
+                Mozilla&nbsp;&nbsp;&nbsp;&nbsp;
+              </label>
+              <label>
+                <input type="radio" name="question2">
+                Microsoft&nbsp;&nbsp;&nbsp;&nbsp;
+              </label>
+              <label>
+                <input type="radio" name="question2">
+                Google
+              </label>
+              </div>
+              <p style="margin-top: 20px;">3. Which character is used to indicate an end tag?</p>
+              <div class="radio">
+              <label>
+                <input type="radio" class="correct" name="question3">
+                /&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </label>
+              <label>
+                <input type="radio" name="question3">
+                *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </label>
+              <label>
+                <input type="radio" name="question3">
+                <&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </label>
+              <label>
+                <input type="radio" name="question3">
+                ^
+              </label>
+              </div>
+              <p style="margin-top:20px;">4. Inline elements are normally displayed without starting a new line.</p>
+              <div class="radio">
+              <label>
+                <input type="radio" class="correct" name="question4">
+                True&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </label>
+              <label>
+                <input type="radio" name="question4">
+                False
+              </label>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-md-6">
+                <button class="btn btn-primary btn-lg btn-block" type="submit" onclick="submitQuiz()">Submit</button>
+              </div>
+              <div class="col-md-6">
+                <button class="btn btn-lg btn-block" data-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+       <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./info.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 
 </body>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

@@ -12,8 +12,40 @@ function enableClick(id) {
 		ele.childNodes[3].setAttribute("onclick", prefix+data[id-1]+suffix);
 	else
 		ele.childNodes[3].setAttribute("onclick", "window.location = './info.html'; return false;");
-	ele.childNodes[5].setAttribute("onclick", "enableClick("+(id+1).toString()+")");
+	if (id != 2)
+		ele.childNodes[5].setAttribute("onclick", "enableClick("+(id+1).toString()+")");
 	ele.childNodes[3].classList.remove("disabled");
 	ele.childNodes[5].classList.remove("disabled");
 	id++;
+}
+
+
+function validationQuiz() {
+	var ans = document.getElementsByClassName("correct");
+	for (var i = 0; i < ans.length; i++) {
+		if (!ans[i].checked) {
+			return false;
+		}
+	}
+	return true;
+}
+
+function submitQuiz() {
+	var res = validationQuiz();
+	if (res) {
+		alert("Congratulation! You pass the quiz!");
+		fade();
+		enableClick(3);
+	} else {
+		alert("You fail. Please try again.");
+		fade();
+	}
+}
+
+
+function fade() {
+	$(function () {
+   		$('.modal').modal('toggle');
+	});
+
 }
