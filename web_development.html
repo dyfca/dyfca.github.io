@@ -5,9 +5,16 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/cosmo/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="./web_development.css">
+    <link rel="stylesheet" type="text/css" href="./pagination.css">
     <meta charset="UTF-8">
     <title> </title>
 </head>
+
+<ul class="breadcrumb">
+	<li class="breadcrumb-item"><a href="./main_page.html">Home</a></li>
+	<li class="breadcrumb-item"><a href="./web_development.html">Learning Plan</a></li>
+	<li class="breadcrumb-item active">Web Development</li>
+</ul>
 
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -15,20 +22,13 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="./main_page.html">Home<span class="sr-only">(current)</span></a>
-            </li>
-          </ul>
-        </div>
       </nav>
     </header>
 
 
 <body>
 
-  <h3 style = "text-align: center; margin-top: 75px; margin-bottom: -70px">Below is your learning plan based on your selected interest, you can learn from the first one step by step.</h3>
+  <h3 style = "text-align: left; margin-top: -18px; margin-bottom: -70px; margin-left: 40px;" >Below is your learning plan based on your selected interest, you can learn from the first one step by step.</h3>
 
 
   <div class="container">
@@ -36,9 +36,9 @@
       <div class="col-md-12 text-center">
         <div class="center-block">
          <div class="card text-white bg-secondary md-6" id="process-1" style="max-width: 20rem">
-              <span class="card-text"><div>XML</div></span>
+              <span class="card-text"><div>HTML</div></span>
               <span class="btn btn-primary disabled">Study</span>
-              <span class="btn btn-primary disabled">Finish</span>
+              <span class="btn btn-primary disabled" data-toggle="modal" data-target="#quizForm">Finish</span>
           </div>
         </div>
         <div class="btn center-block">
@@ -46,9 +46,9 @@
         </div>
         <div class="center-block">
           <div class="card text-white bg-secondary md-6" id="process-2" style="max-width: 20rem">
-              <span class="card-text"><div>HTML</div></span>
+              <span class="card-text"><div>XML</div></span>
               <span class="btn btn-primary disabled">Study</span>
-              <span class="btn btn-primary disabled" data-toggle="modal" data-target="#quizForm"><span>Finish</span></span>
+              <span class="btn btn-primary disabled"><span>Finish</span></span>
           </div>
         </div>
         <p class="btn center-block">

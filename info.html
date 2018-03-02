@@ -8,44 +8,32 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/cosmo/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./info.css">
+    <link rel="stylesheet" type="text/css" href="./pagination.css">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>HTML Learning</title>
   </head>
   <body>
 
+  <ul class="breadcrumb">
+    <li class="breadcrumb-item"><a href="./main_page.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="./web_development.html">Learning Plan</a></li>
+    <li class="breadcrumb-item active">HTML</li>
+  </ul>
+
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">LLLearning</a>
+        <a class="navbar-brand" href="./main_page.html">LLLearning</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="./main_page.html">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="./sign_up.html">Register<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="./sign_in.html">Login<span class="sr-only">(current)</span></a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="./sign_up.html">Register</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Login</a>
-            </li> -->
-          </ul>
-        </div>
       </nav>
     </header>
 
-    <div class="info">
+    <div style="margin-top: -30px" class="info">
       <div class="container">
         <div class="row">
           <col-md-12>
-            <h1>Welcome to learn HTML!</h1>
+            <h1>Welcome to learning HTML!</h1>
           </col-md-12>
         </div>
         <div class="row"><br></div>
@@ -63,11 +51,12 @@
             </div>
           </div>
         </div>
+        <strong class="row" style="margin-top: 20px; margin-left: 0px; margin-bottom: 0px; font-size: 25px;">After learning, do the quiz to finish your learning.</strong>
         <div class="row">
           <div class="col-md-7">
-            <div class="info-button">
+            <div style="margin-top: 60px" class="info-button">
               <div class="row">
-                <div class="col-md-12"><button class="btn btn-primary" type="button" onclick="location.href='https://www.w3schools.com/html/default.asp'; return false;">Start Learning</button></div>
+                <div class="col-md-12"><button class="btn btn-primary" type="button" onclick="location.href='https://www.w3schools.com/html/default.asp'; return false;">Reading Materials</button></div>
               </div>
               <div class="row">
                 <div class="col-md-12"><button class="btn btn-primary" type="button" data-toggle="modal" data-target="#quizForm">Quiz</button></div>
@@ -75,6 +64,7 @@
             </div>
           </div>
         </div>
+        <iframe style="margin-left: 400px; margin-top: -270px; margin-bottom: 20px;" class="row" width="600" height="330" src="https://www.youtube.com/embed/y3UH2gAhwPI"></iframe>
 
       </div>
     </div>
