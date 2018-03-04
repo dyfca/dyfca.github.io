@@ -1,0 +1,18 @@
+.course {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	background-color: #383a3c;
+	margin-left: 100px;
+	height: 150px;
+	width: 150px;
+}
+
+.name {
+	margin-top: 50px;
+}
+
+.arrow {
+	margin-left: 160px;
+	margin-top: 15px;
+}
