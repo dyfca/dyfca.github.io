@@ -2,39 +2,25 @@
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
 .month {
-    padding: 70px 25px;
-    width: 100%;
-    background-color: #007bff;
+    
     text-align: center;
 }
 
-.month ul {
-    margin: 0;
-    padding: 0;
+.month *{
+    background-color: #007bff;
+    text-align: center;
+    position: relative;
 }
-
-.month ul li {
-    color: white;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
 .month .prev {
     float: left;
-    padding-top: 10px;
 }
 
 .month .next {
     float: right;
-    padding-top: 10px;
+
 }
 
-.weekdays {
-    margin: 0;
-    padding: 10px 0;
-    background-color: #ddd;
-}
+
 
 .weekdays li {
     display: inline-block;
@@ -43,11 +29,14 @@ body {font-family: Verdana, sans-serif;}
     text-align: center;
 }
 
-.days {
-    padding: 10px 0;
+
+
+
+.days .col-md-1 {
+    text-align: center;
     background: #eee;
-    margin: 0;
 }
+
 
 .days li {
     list-style-type: none;
@@ -58,9 +47,33 @@ body {font-family: Verdana, sans-serif;}
     font-size:12px;
     color: #777;
 }
-
-.days li .active {
+.days .col-md-1 {
     padding: 5px;
+}
+.days .active {
+    
     background-color: #007bff;
     color: white !important
+}
+
+.weekdays {
+    margin: 0;
+    background-color: #666
+}
+
+.event {
+    position: relative;
+    margin-right: 5px;
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #00aaff;
+}
+
+.event .title {
+    font-size: 15px;
+}
+
+.events-main {
+        
 }
