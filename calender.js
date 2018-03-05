@@ -4,14 +4,14 @@ currentView = 0;
 monthView = 0;
 weekView = 1;
 dayView = 2;
-currentMonth = 1;
-currentYear = 2008;
-currentActive = -1;
+currentMonth = new Date().getMonth();
+currentYear = new Date().getFullYear();
+currentActive = new Date().getDate();
 weekNames = ["Sun", "Mon", "Tue", "Wes", "Thu", "Fri", "Sat"];
 
 eventsData = {};
 currentIndex = -1;
-eventsData[20180205] = [{title: "Test", description: "test"}, {title: "Test2", description: "test2"}];
+eventsData[currentYear * 10000 + currentMonth * 100 + parseInt(currentActive)] = [{title: "Study Plan1", description: "Finish HTML"}, {title: "Study Plan2", description: "Learn XML"}];
 
 
 function saveEvent() {
@@ -21,7 +21,6 @@ function saveEvent() {
   eventData = eventsData[eventID];
   form_title = document.getElementById("title").value;
   form_description = document.getElementById("description").value;
-  alert(form_description);
   if (currentIndex < 0) {
     eventsData[eventID].push({title: form_title, description: form_description});
   } else {
@@ -54,8 +53,8 @@ function renderEvent() {
     
     for (var i = 0; i < eventData.length; i++) {
       res += "<div class=\"event\" type=\"button\" onClick=\"editEvent(" + i + ")\">";
-      res += "<div class=\"row\"><div class=\"col-md-7 title\"><span>" + eventData[i].title +"</span></div></div>";
-      res += "<div class=\"row\"><div class=\"col-md-7 description\"><span>" + eventData[i].description +"</span></div></div>";
+      res += "<div class=\"row\"><div class=\"col-md-7 title\">" + eventData[i].title +"</div></div>";
+      res += "<div class=\"row\"><div class=\"col-md-7 description\">" + eventData[i].description +"</div></div>";
       res += "</div>"
     }
   }
@@ -131,6 +130,7 @@ function switchCalendar(next, month, year) {
 }
 
 function init() {
+
   document.getElementById("prev").setAttribute("onClick", "switchCalendar(false)");
   document.getElementById("next").setAttribute("onClick", "switchCalendar(true)");
   currentMonth = new Date().getMonth();
