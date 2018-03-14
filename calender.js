@@ -21,6 +21,14 @@ function saveEvent() {
   eventData = eventsData[eventID];
   form_title = document.getElementById("title").value;
   form_description = document.getElementById("description").value;
+  if (form_title === undefined || form_title === "") {
+    alert("You must input the title");
+    return false;
+  }
+  if (form_description === undefined || form_description === "") {
+    alert("You must input the content");
+    return false;
+  }
   if (currentIndex < 0) {
     eventsData[eventID].push({title: form_title, description: form_description});
   } else {
