@@ -129,7 +129,7 @@ function switchCalendar(next, month, year) {
   renderEvent();
 }
 
-function init() {
+function calendarInit() {
 
   document.getElementById("prev").setAttribute("onClick", "switchCalendar(false)");
   document.getElementById("next").setAttribute("onClick", "switchCalendar(true)");
