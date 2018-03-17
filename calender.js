@@ -41,6 +41,7 @@ function saveEvent() {
     eventsData[eventID][currentIndex].description = form_description;
   }
   renderEvent();
+  render(currentMonth, currentYear, parseInt(currentActive));
   $("#eventForm").modal('toggle');
 }
 function editEvent(index) {
